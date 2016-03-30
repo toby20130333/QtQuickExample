@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>DDSplitView.qml</file>
+        <file>DDMidView.qml</file>
+        <file>DDTopBar.qml</file>
+        <file>DDHomeButton.qml</file>
+        <file>DDBottomBar.qml</file>
+        <file>DDuiShadowBg.qml</file>
+        <file>QQ/DDQQPageView.qml</file>
+        <file>XunLei/DDXunLei.qml</file>
+        <file>XunLei/DDXunView.qml</file>
+        <file>XunLei/DDXunGridView.qml</file>
+        <file>XunLei/DDXunLocalView.qml</file>
+    </qresource>
+</RCC>
