@@ -1,5 +1,6 @@
-﻿# 基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
+﻿# (持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
 
+![驱动精灵主界面](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickdriver.png)
 ![迅雷在线皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickxl.png)
 ![迅雷本地皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquicklocal.png)
 
@@ -29,5 +30,6 @@
 
 
 ## 注意事项
+* 例子有多个demo，自行切换main.cpp的加载qml的路径
 * 例子中涉及到图片资源，请自行提供(涉及到图片版权问题)
 * 例子中的qml加载路径是相对路径,为了方便调试，请注意不要使用[影子构建](http://www.cnblogs.com/menlsh/archive/2012/07/30/2615974.html)
