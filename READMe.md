@@ -1,5 +1,9 @@
 ﻿# 基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
 
+![迅雷在线皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickxl.png)
+![迅雷本地皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquicklocal.png)
+
+
 ## 客户端
 
 ### 使用QtQuick技术开发酷炫的客户端
