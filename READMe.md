@@ -1,4 +1,4 @@
-﻿# (持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
+﻿# (20160330-持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
 
 ![驱动精灵主界面](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickdriver.png)
 ![迅雷在线皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickxl.png)
