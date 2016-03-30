@@ -42,4 +42,14 @@ Rectangle {
             btnTxt: "8Track"
         }
     }
+    DDCloseButton{
+        id:close
+        width: 32
+        height: width
+        anchors.top: parent.top
+        anchors.right: parent.right
+        onSignalCloseApp: {
+            signalQmlOptions("close app","system");
+        }
+    }
 }

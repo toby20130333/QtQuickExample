@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
         <file>DDSplitView.qml</file>
         <file>DDMidView.qml</file>
         <file>DDTopBar.qml</file>
@@ -12,5 +11,9 @@
         <file>XunLei/DDXunView.qml</file>
         <file>XunLei/DDXunGridView.qml</file>
         <file>XunLei/DDXunLocalView.qml</file>
+        <file>QQ/DDQQMainView.qml</file>
+        <file>DDCloseButton.qml</file>
+        <file>DDAbstractView.qml</file>
+        <file>Driver/DDDriverView.qml</file>
     </qresource>
 </RCC>
