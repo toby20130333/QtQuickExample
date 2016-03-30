@@ -22,3 +22,8 @@
 
 * [寒山-居士](https://github.com/toby20130333)
 * [toby520](www.heilqt.com)
+
+
+## 注意事项
+* 例子中涉及到图片资源，请自行提供(涉及到图片版权问题)
+* 例子中的qml加载路径是相对路径,为了方便调试，请注意不要使用[影子构建](http://www.cnblogs.com/menlsh/archive/2012/07/30/2615974.html)
