@@ -1,0 +1,186 @@
+{
+	"response": {
+		"total_results": 33,
+		"trades": [{
+			"tid": "E231958349",
+			"num": 1,
+			"num_iid": 3424234,
+			"price": 200.07,
+			"pic_path": "http:\/\/imgqn.koudaitong.com\/upload_files\/2014\/01\/13\/138961372114213030.jpg",
+			"pic_thumb_path": "http:\/\/imgqn.koudaitong.com\/upload_files\/2014\/01\/13\/138961372114213030.jpg!200x0.jpg",
+			"title": "\u6625\u5b63\u65b0\u6b3e\u8fde\u8863\u88d9",
+			"type": "FIXED",
+			"weixin_user_id": 18,
+			"buyer_type": 1,
+			"buyer_id": 18,
+			"buyer_nick": "MyGirl",
+			"buyer_message": "",
+			"seller_flag": "5",
+			"trade_memo": "\u8fd9\u662f\u4e00\u6b21\u6210\u529f\u7684\u4ea4\u6613",
+			"receiver_city": "\u676d\u5dde\u5e02",
+			"receiver_district": "\u897f\u6e56\u533a",
+			"receiver_name": "\u4e1c\u65b9\u8d25\u5bb6",
+			"receiver_state": "\u6d59\u6c5f\u7701",
+			"receiver_address": "\u534e\u590f\u8def#12",
+			"receiver_zip": "223700",
+			"receiver_mobile": "13512501826",
+			"feedback": "0",
+			"refund_state": "NO_REFUND",
+			"outer_tid": "X231958349",
+			"status": "TRADE_NO_CREATE_PAY",
+			"shipping_type": "express",
+			"post_fee": 2.01,
+			"total_fee": 200.02,
+			"refunded_fee": 0,
+			"discount_fee": 0,
+			"payment": 202.03,
+			"created": "2000-01-01 00:00:00",
+			"update_time": "2000-01-01 00:00:00",
+			"pay_time": "2000-01-01 00:00:00",
+			"pay_type": "ALIPAY",
+			"consign_time": "2000-01-01 00:00:00",
+			"sign_time": "2000-01-02 12:00:00",
+			"buyer_area": "\u6d59\u6c5f\u7701\u676d\u5dde\u5e02",
+			"orders": [{
+				"oid": 14776,
+				"num_iid": 3424234,
+				"sku_id": 32221,
+				"sku_unique_code": "342423432221",
+				"num": 2,
+				"outer_sku_id": "81893848",
+				"outer_item_id": "G1893848",
+				"title": "\u5c71\u5be8\u7248\u6d4b\u8bd5\u673a\u5668",
+				"seller_nick": "\u9ea6\u5305\u5305",
+				"fenxiao_price": 220.02,
+				"fenxiao_payment": 220.02,
+				"price": 200.02,
+				"total_fee": 200.02,
+				"discount_fee": 0,
+				"payment": 200.02,
+				"sku_properties_name": "\u989c\u8272:\u6854\u8272;\u5c3a\u7801:M",
+				"pic_path": "http:\/\/imgqn.koudaitong.com\/upload_files\/2014\/01\/13\/138961372114213030.jpg",
+				"pic_thumb_path": "http:\/\/imgqn.koudaitong.com\/upload_files\/2014\/01\/13\/138961372114213030.jpg!200x0.jpg",
+				"item_type": "0",
+				"buyer_messages": [{
+					"title": "\u989c\u8272\u8981\u6c42",
+					"content": "\u7ea2\u8272\u7684\u6216\u8005\u9ec4\u8272\u7684"
+				},
+				{
+					"title": "\u989c\u8272\u8981\u6c42",
+					"content": "\u7ea2\u8272\u7684\u6216\u8005\u9ec4\u8272\u7684"
+				}],
+				"order_promotion_details": [{
+					"promotion_name": "\u626b\u7801\u6298\u6263",
+					"promotion_type": "CUSTOMER_DISCOUNT",
+					"apply_at": "2014-09-30 12:23:00",
+					"discount_fee": "10.00"
+				},
+				{
+					"promotion_name": "\u626b\u7801\u6298\u6263",
+					"promotion_type": "CUSTOMER_DISCOUNT",
+					"apply_at": "2014-09-30 12:23:00",
+					"discount_fee": "10.00"
+				}],
+				"state_str": "\u5df2\u53d1\u8d27,\u5f85\u53d1\u8d27,\u9000\u6b3e\u4e2d,\u9000\u6b3e\u5173\u95ed,\u9000\u6b3e\u6210\u529f",
+				"item_refund_state": "NO_REFUND(\u65e0\u9000\u6b3e),PARTIAL_REFUND(\u90e8\u5206\u9000\u6b3e),FULL_REFUND(\u5168\u989d\u9000\u6b3e) \u003C\/br\u003E \u53ea\u6709\u5f53\u8ba2\u5355\u662f\u90e8\u5206\u9000\u6b3e, \u624d\u4f1a\u751f\u6210item_refund_state"
+			},
+			{
+				"oid": 14776,
+				"num_iid": 3424234,
+				"sku_id": 32221,
+				"sku_unique_code": "342423432221",
+				"num": 2,
+				"outer_sku_id": "81893848",
+				"outer_item_id": "G1893848",
+				"title": "\u5c71\u5be8\u7248\u6d4b\u8bd5\u673a\u5668",
+				"seller_nick": "\u9ea6\u5305\u5305",
+				"fenxiao_price": 220.02,
+				"fenxiao_payment": 220.02,
+				"price": 200.02,
+				"total_fee": 200.02,
+				"discount_fee": 0,
+				"payment": 200.02,
+				"sku_properties_name": "\u989c\u8272:\u6854\u8272;\u5c3a\u7801:M",
+				"pic_path": "http:\/\/imgqn.koudaitong.com\/upload_files\/2014\/01\/13\/138961372114213030.jpg",
+				"pic_thumb_path": "http:\/\/imgqn.koudaitong.com\/upload_files\/2014\/01\/13\/138961372114213030.jpg!200x0.jpg",
+				"item_type": "0",
+				"buyer_messages": [{
+					"title": "\u989c\u8272\u8981\u6c42",
+					"content": "\u7ea2\u8272\u7684\u6216\u8005\u9ec4\u8272\u7684"
+				},
+				{
+					"title": "\u989c\u8272\u8981\u6c42",
+					"content": "\u7ea2\u8272\u7684\u6216\u8005\u9ec4\u8272\u7684"
+				}],
+				"order_promotion_details": [{
+					"promotion_name": "\u626b\u7801\u6298\u6263",
+					"promotion_type": "CUSTOMER_DISCOUNT",
+					"apply_at": "2014-09-30 12:23:00",
+					"discount_fee": "10.00"
+				},
+				{
+					"promotion_name": "\u626b\u7801\u6298\u6263",
+					"promotion_type": "CUSTOMER_DISCOUNT",
+					"apply_at": "2014-09-30 12:23:00",
+					"discount_fee": "10.00"
+				}],
+				"state_str": "\u5df2\u53d1\u8d27,\u5f85\u53d1\u8d27,\u9000\u6b3e\u4e2d,\u9000\u6b3e\u5173\u95ed,\u9000\u6b3e\u6210\u529f",
+				"item_refund_state": "NO_REFUND(\u65e0\u9000\u6b3e),PARTIAL_REFUND(\u90e8\u5206\u9000\u6b3e),FULL_REFUND(\u5168\u989d\u9000\u6b3e) \u003C\/br\u003E \u53ea\u6709\u5f53\u8ba2\u5355\u662f\u90e8\u5206\u9000\u6b3e, \u624d\u4f1a\u751f\u6210item_refund_state"
+			}],
+			"fetch_detail": {
+				"fetcher_name": "\u5c0f\u4e8c",
+				"fetcher_mobile": "13512501826",
+				"fetch_time": "2014-08-20 12:08:00",
+				"shop_name": "\u676d\u5dde\u6b66\u6797\u95e8\u5e97",
+				"shop_mobile": "13812501826",
+				"shop_state": "\u6d59\u6c5f\u7701",
+				"shop_city": "\u676d\u5dde\u5e02",
+				"shop_district": "\u897f\u6e56\u533a",
+				"shop_address": "\u73af\u57ce\u897f\u8def16\u53f7"
+			},
+			"coupon_details": [{
+				"coupon_id": "80",
+				"coupon_name": "\u56fd\u5e8610\u5143\u4f18\u60e0",
+				"coupon_type": "PROMOCODE",
+				"coupon_content": "R5YUXHHAJV",
+				"coupon_description": "\u5168\u5e97\u90fd\u901a\u7528",
+				"coupon_condition": "\u6ee150\u5143\u51cf10\u5143",
+				"used_at": "2014-09-30 12:23:00",
+				"discount_fee": "10.00"
+			},
+			{
+				"coupon_id": "80",
+				"coupon_name": "\u56fd\u5e8610\u5143\u4f18\u60e0",
+				"coupon_type": "PROMOCODE",
+				"coupon_content": "R5YUXHHAJV",
+				"coupon_description": "\u5168\u5e97\u90fd\u901a\u7528",
+				"coupon_condition": "\u6ee150\u5143\u51cf10\u5143",
+				"used_at": "2014-09-30 12:23:00",
+				"discount_fee": "10.00"
+			}],
+			"promotion_details": [{
+				"promotion_id": "80",
+				"promotion_name": "\u56fd\u5e8610\u5143\u4f18\u60e0",
+				"promotion_type": "FULLREDUCE",
+				"promotion_condition": "\u6ee150\u5143\u51cf10\u5143\uff1b\u6ee140\u5143\u51cf5\u5143",
+				"used_at": "2014-09-30 12:23:00",
+				"discount_fee": "10.00"
+			},
+			{
+				"promotion_id": "80",
+				"promotion_name": "\u56fd\u5e8610\u5143\u4f18\u60e0",
+				"promotion_type": "FULLREDUCE",
+				"promotion_condition": "\u6ee150\u5143\u51cf10\u5143\uff1b\u6ee140\u5143\u51cf5\u5143",
+				"used_at": "2014-09-30 12:23:00",
+				"discount_fee": "10.00"
+			}],
+			"adjust_fee": 10.02,
+			"sub_trades": "",
+			"relation_type": "",
+			"relations": "",
+			"profit": 5.2,
+			"handled": 1
+		}],
+		"has_next": true
+	}
+}

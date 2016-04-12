@@ -3,6 +3,8 @@
 
 #include <QQuickView>
 #include <QMouseEvent>
+#include <QQmlContext>
+
 #include <QPoint>
 #include <QCursor>
 #include <QRect>
@@ -13,6 +15,7 @@
 #include <QParallelAnimationGroup>
 #include <QPropertyAnimation>
 #include <QQuickItem>
+#include "youzan/youzanobject.h"
 
 enum Direction{
     UP = 0,
