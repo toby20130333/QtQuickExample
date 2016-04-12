@@ -117,8 +117,8 @@ ListView{
         var startCreated=startDate;
         var endCreadted=endDate;
 
-        var secret="f2c68e2077866802c2eb840d0fe201b3";
-        var appid="fb28eaabc526f7899b";
+        var secret="xxxx";
+        var appid="xxxx";
         var currentDate=new Date();
         var method="kdt.trades.sold.get";//调用第三方接口函数
 
