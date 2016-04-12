@@ -91,7 +91,7 @@ Item{
             anchors.right:  parent.right
             anchors.rightMargin: 10
             anchors.top: midRect.top
-            anchors.topMargin: 10
+            anchors.topMargin: 40
             z:20
             smooth: true
         }

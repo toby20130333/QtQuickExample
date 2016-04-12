@@ -8,7 +8,7 @@ ListView{
     ListModel{
         id:tradesModel
     }
-    model:5//tradesModel
+    model:tradesModel
     delegate: YouzanItem {
         height: 400
         width: parent.width
@@ -26,7 +26,7 @@ ListView{
         }
     }
     Component.onCompleted: {
-        searchTrades("2016-03-09 00:00:00","2016-05-09 00:00:00")
+        searchTrades("2016-03-09 00:00:00","2016-04-20 00:00:00")
     }
 
     function searchTrades(startDate,endDate){
@@ -36,9 +36,9 @@ ListView{
         //监听onreadystatechange事件
         request.onreadystatechange=function(){
             if(request.readyState===request.DONE){
-                console.log("-----有赞API已经返回了数据---- "+(request.responseText.toString()));
+                console.log("-----有赞API已经返回了数据---- "+request.responseText.length);
                 data=JSON.parse(request.responseText.toString());
-                if(request.error_response !== 'undefined'){
+                if(request.response === 'undefined'){
                     return;
                 }
                 for(var i=0;i<data.response.trades.length;i++){
@@ -116,8 +116,9 @@ ListView{
         var startCreated=startDate;
         var endCreadted=endDate;
 
-        var secret="your secret";
-        var appid="your appid";
+        var secret="xxxx";
+        var appid="xxxx";
+
         var currentDate=new Date();
         var method="kdt.trades.sold.get";//调用第三方接口函数
 
@@ -151,8 +152,8 @@ ListView{
         request.onreadystatechange=function(){
             if(request.readyState===request.DONE){
                 console.log("-----微信号是多少?---- "+(request.responseText.toString()));
-//                tradesModel.append({});
-//                return;
+                //                tradesModel.append({});
+                //                return;
                 data=JSON.parse(request.responseText.toString());
                 console.log(request.responseText.toString())
                 for(var i=0;i<data.response.trades.length;i++){
