@@ -70,4 +70,5 @@ void YouZanObject::setCurrentPrintContents(const QString &html)
 {
     if(mHtmlList.contains(html))return;
     mHtmlList.append(html);
+    qDebug()<<"setCurrentPrintContents "<<mHtmlList.size();
 }

@@ -37,7 +37,6 @@ void YbQuickView::setHasMouse(bool isHasMouse)
 void YbQuickView::setSourceAndRegsiterObj(const QUrl &url, bool regsiter)
 {
 #ifdef USE_YOUZAN
-    YouZanObject yZObj;
     this->rootContext()->setContextProperty("yzObj", &yZObj);
 #endif
     setSource(url);

@@ -62,7 +62,15 @@ Item {
                 refreshBtn.color = "#12AADF";
             }
             onClicked: {
-
+                for(var i=0;i<yz.modelCount;i++){
+                    console.log("----qml-------"+i);
+                    if(yz.currentIndex>=yz.modelCount){
+                        yz.currentIndex = 0;
+                    }
+                    yzObj.setCurrentPrintContents(yz.currentItem.gethtmlcontents());
+                    yz.currentIndex = i+1;
+                }
+                yzObj.openPrinfDialog(true);
             }
         }
 

@@ -66,6 +66,7 @@ Item{
                 anchors.fill: parent
                 anchors.margins: 10
                 readOnly: true
+                clip:true
                 textFormat: TextEdit.RichText
                 text: "<br><font color='#12AADF'>*订单号</font>: "+zanId+"              No: "+(index+1)+"<br><br><font color='#12AADF'>*商品名</font>: "+zanProductName
                       +"<br><br><font color='#12AADF'>*数量</font>: "+zanCount+"<br><br><font color='#12AADF'>*单价</font>: "+zanPrice+"元<br><br><font color='#12AADF'>*应付</font>: "+zanFee
@@ -83,15 +84,14 @@ Item{
             verticalAlignment: Text.AlignVCenter
             color: "black"
         }
-        Image {
+        BorderImage {
             id: imgUrl
             source: zanImg
             width: 96
             height: width
             anchors.right:  parent.right
             anchors.rightMargin: 10
-            anchors.top: midRect.top
-            anchors.topMargin: 40
+            anchors.verticalCenter: parent.verticalCenter
             z:20
             smooth: true
         }
@@ -129,7 +129,7 @@ Item{
     }
 
     function gethtmlcontents(){
-        console.log("text is "+name2.text)
+        //console.log("text is "+name2.text)
         return name2.text;
     }
 }

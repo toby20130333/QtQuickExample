@@ -69,6 +69,7 @@ private:
     bool canMove;
 
     QObject *m_Obj;
+    YouZanObject yZObj;
 public slots:
     void slotFinishedAnimation1();
     void slotFinishedAnimation2();

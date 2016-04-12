@@ -19,6 +19,7 @@ ListView{
         zanFee: fee //总价
         zanCreateTime: createTime //创建时间
         zantrade: paytype //交易类型
+        zanImg: imgpath
         onSignalClicked: {
             //每个订单的打印按钮
             yzObj.setCurrentPrintContents(gethtmlcontents());
@@ -26,7 +27,7 @@ ListView{
         }
     }
     Component.onCompleted: {
-        searchTrades("2016-03-09 00:00:00","2016-04-20 00:00:00")
+        searchTrades("2016-03-09 00:00:00","2016-04-10 00:00:00")
     }
 
     function searchTrades(startDate,endDate){
@@ -51,13 +52,13 @@ ListView{
                     if(defference){
                         var titletotal="";
                         var price ="0";
-                        var zanCount = "0";
+                        var zanCount = 0;
                         var pic_path = "";
                         var orders=data.response.trades[i].orders;
                         for(var a=0;a<orders.length;a++){
                             price = orders[0].price;
                             pic_path = orders[0].pic_path;
-                            zanCount +=+orders[a].num;
+                            zanCount +=orders[a].num;
                             titletotal+=(" "+orders[a].title);
                         }
                         var sum=0.0;
@@ -116,9 +117,8 @@ ListView{
         var startCreated=startDate;
         var endCreadted=endDate;
 
-        var secret="xxxx";
-        var appid="xxxx";
-
+        var secret="f2c68e2077866802c2eb840d0fe201b3";
+        var appid="fb28eaabc526f7899b";
         var currentDate=new Date();
         var method="kdt.trades.sold.get";//调用第三方接口函数
 

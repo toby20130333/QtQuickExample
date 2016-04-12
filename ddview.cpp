@@ -38,7 +38,7 @@ void DDView::mouseReleaseEvent(QMouseEvent *e)
 {
     return QQuickView::mouseReleaseEvent(e);
 }
-
+#ifdef Q_OS_WIN
 bool DDView::nativeEvent(const QByteArray &eventType, void *message, long *result)
 {
     if (this->minimumHeight() >= this->maximumHeight()
@@ -97,3 +97,4 @@ bool DDView::nativeEvent(const QByteArray &eventType, void *message, long *resul
     }
     return  QQuickView::nativeEvent(eventType, message, result);;
 }
+#endif

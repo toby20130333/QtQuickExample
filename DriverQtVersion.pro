@@ -14,6 +14,9 @@ RESOURCES += qml.qrc \
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
+MOC_DIR =./tmp/moc
+UI_DIR = ./tmp/ui
+OBJECTS_DIR = ./tmp/obj
 
 DEFINES += USE_YOUZAN
 
