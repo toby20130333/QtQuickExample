@@ -3,7 +3,7 @@ TEMPLATE = app
 QT += qml quick printsupport
 
 SOURCES += main.cpp \
-    ddview.cpp \
+#    ddview.cpp \
     ddquickview.cpp \
     youzan/youzanapi.cpp \
     youzan/youzanobject.cpp
@@ -24,7 +24,7 @@ DEFINES += USE_YOUZAN
 include(deployment.pri)
 
 HEADERS += \
-    ddview.h \
+#    ddview.h \
     ddquickview.h \
     youzan/youzanapi.h \
     youzan/youzanobject.h
