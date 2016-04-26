@@ -9,7 +9,8 @@ SOURCES += main.cpp \
     youzan/youzanobject.cpp
 
 RESOURCES += qml.qrc \
-                          youzan/qml.qrc
+                          youzan/qml.qrc \
+    imgqrc.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

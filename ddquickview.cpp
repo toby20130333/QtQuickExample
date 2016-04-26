@@ -63,7 +63,7 @@ void YbQuickView::mousePressEvent(QMouseEvent *event)
         isLeftPressDown = true;
         if(dir != NONE) {
         } else {
-            if(  (event->pos().y()<=200) && (event->pos().x() >= this->width()-200))
+            if(  (event->pos().y()<=100) && (event->pos().x() <150))
             {
                 dragPosition = event->globalPos() - this->frameGeometry().topLeft();
                 canMove = true;

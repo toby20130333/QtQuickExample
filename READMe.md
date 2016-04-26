@@ -1,9 +1,9 @@
-﻿# (20160412-持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
+# (20160426-持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
 
 ![驱动精灵主界面](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickdriver.png)
 ![迅雷在线皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickxl.png)
 ![迅雷本地皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquicklocal.png)
-![有赞商城商品UI](http://7qn7mv.com1.z0.glb.clouddn.com/youzan.png)
+![有赞商城商品UI](http://7qn7mv.com1.z0.glb.clouddn.com/youzan-new.png)
 
 ## 客户端
 
@@ -15,6 +15,10 @@
 * 支持窗口拉伸且可以设置停靠属性
 * 新增QML与C++交换的接口
 * 新增有赞商城API接口和界面
+* 新增自定义日历选择功能
+* 新增打印有赞商城订单功能
+* 刷新订单功能
+* 新增二维码生成接口(可以参考我的另外的项目[二维码生成器](https://github.com/toby20130333/qtquickqrencode))
 
 ## 憧憬
 

@@ -1,7 +1,9 @@
 import QtQuick 2.0
 import "../"
+import "./youzan.js" as YSTHEME
 
 Item {
+    property int whichDateEdit: 0
     DDCloseButton{
         id:close
         width: 30
@@ -13,6 +15,11 @@ Item {
             signalQmlOptions("close app","system");
         }
     }
+    YouZanWindow{
+        id:mainView
+        visible: false
+    }
+
     //顶部的标题栏
     Rectangle{
         id: tid
@@ -24,11 +31,36 @@ Item {
         color: "#12AADF"
         z:10
         Text {
-            text: "有赞API测试---订单查询"
-            anchors.fill: parent
-            horizontalAlignment: Text.AlignHCenter
+            text: "  仅仅测试-下单时间"
+            anchors.left:  parent.left
+            height: parent.height
+            width: parent.width/2
+            font.family: YSTHEME.textfontfamily
             verticalAlignment: Text.AlignVCenter
             color: "white"
+        }
+    }
+    YouZanAnimation  {
+        id:anmitionsId
+        anchors.top: tid.top
+        anchors.topMargin: 0
+        anchors.right: close.left
+        anchors.rightMargin: 10
+        height: tid.height
+        width: parent.width*2/3
+        z:10
+        onSignalDateEditChanged: {
+            console.log("发现的标志位: "+iType);
+            whichDateEdit = iType;
+            if(iType==1){
+                mainView.setCalDate(new Date);
+            }
+            if(!mainView.visible){
+                mainView.visible = true;
+            }
+        }
+        onSignalDataCalChanged: {
+                mainView.setCalDate(calDate);
         }
     }
     //中间的列表
@@ -62,15 +94,7 @@ Item {
                 refreshBtn.color = "#12AADF";
             }
             onClicked: {
-                for(var i=0;i<yz.modelCount;i++){
-                    console.log("----qml-------"+i);
-                    if(yz.currentIndex>=yz.modelCount){
-                        yz.currentIndex = 0;
-                    }
-                    yzObj.setCurrentPrintContents(yz.currentItem.gethtmlcontents());
-                    yz.currentIndex = i+1;
-                }
-                yzObj.openPrinfDialog(true);
+                yz.prinfMuch();
             }
         }
 
@@ -80,7 +104,8 @@ Item {
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             color: "white"
-            font.pixelSize: 16
+            font.family: YSTHEME.textfontfamily
+            font.pixelSize: YSTHEME.textFontSize
         }
     }
     //右侧的刷新按钮
@@ -107,17 +132,24 @@ Item {
                 refreshBtn.color = "#12AADF";
             }
             onClicked: {
-
+                getbetweenData();
             }
         }
 
         Text {
-            text: "刷新订单"
+            text: "查询订单"
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             color: "white"
-            font.pixelSize: 16
+            font.family: YSTHEME.textfontfamily
+            font.pixelSize: YSTHEME.textFontSize
         }
+    }
+
+    function getbetweenData(){
+       var dateArr =     anmitionsId.getDatas();
+        console.log("-----------------"+dateArr[0]);
+        yz.searchTrades(dateArr[0],dateArr[1]);
     }
 }
