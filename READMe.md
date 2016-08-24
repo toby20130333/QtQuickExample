@@ -1,10 +1,10 @@
-# (20160426-持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
+# (20160824持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
 
 ![驱动精灵主界面](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickdriver.png)
 ![迅雷在线皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickxl.png)
 ![迅雷本地皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquicklocal.png)
 ![有赞商城商品UI](http://7qn7mv.com1.z0.glb.clouddn.com/youzan-new.png)
-
+![360安全卫士](http://7qn7mv.com1.z0.glb.clouddn.com/360.png)
 ## 客户端
 
 ### 使用QtQuick技术开发酷炫的客户端
@@ -19,6 +19,7 @@
 * 新增打印有赞商城订单功能
 * 刷新订单功能
 * 新增二维码生成接口(可以参考我的另外的项目[二维码生成器](https://github.com/toby20130333/qtquickqrencode))
+* 新增360安全界面模仿
 
 ## 憧憬
 
