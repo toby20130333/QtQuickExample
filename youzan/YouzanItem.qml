@@ -2,7 +2,7 @@ import QtQuick 2.0
 import QtQuick.Controls 1.2
 import QtQuick.Controls.Styles 1.2
 import QtGraphicalEffects 1.0
-import duoduo.encode.components 1.0
+//import duoduo.encode.components 1.0
 
 import "./youzan.js" as YSTHEME
 
@@ -84,26 +84,26 @@ Item{
                       +"<br><br><font color='#000000'>*联系人</font>: "+zanUserName+"<br><br><font color='#000000'>*收货地址</font>: "+zanAddress+"<br><br><font color='#000000'>*联系号码</font>: "+zanPhoneNum
             }
         }
-        QREnCode {
-            id: imgUrl
-            width: 96
-            height: width
-            anchors.bottom: dianxiaoEr.top
-            anchors.bottomMargin: -4
-            anchors.horizontalCenter: parent.horizontalCenter
-            smooth: true
-            qrSize: Qt.size(width,width)
-            qrData:zanTitle+index //encode contents
-            qrForeground: "#29aee1" //encode color
-            qrBackground: "white"
-            qrMargin: 2
-            qrMode: QREnCode.MODE_8    //encode model
-            qrLevel: QREnCode.LEVEL_Q // encode level
-            qrLogo: zanImg //or local path or qrc path but not network url
-            onQrSaveFileChanged: {
-                console.log("We get save file path is :"+qrfilepath)
-            }
-        }
+//        QREnCode {
+//            id: imgUrl
+//            width: 96
+//            height: width
+//            anchors.bottom: dianxiaoEr.top
+//            anchors.bottomMargin: -4
+//            anchors.horizontalCenter: parent.horizontalCenter
+//            smooth: true
+//            qrSize: Qt.size(width,width)
+//            qrData:zanTitle+index //encode contents
+//            qrForeground: "#29aee1" //encode color
+//            qrBackground: "white"
+//            qrMargin: 2
+//            qrMode: QREnCode.MODE_8    //encode model
+//            qrLevel: QREnCode.LEVEL_Q // encode level
+//            qrLogo: zanImg //or local path or qrc path but not network url
+//            onQrSaveFileChanged: {
+//                console.log("We get save file path is :"+qrfilepath)
+//            }
+//        }
         Text {
             id:dianxiaoEr
             text: "<font color='#000000'>--校园小二  感谢您的光临--</font>"

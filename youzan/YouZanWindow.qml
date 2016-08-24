@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Window 2.2
-import QtQuick.Controls 1.3
+import QtQuick.Controls 1.1
 import "./youzan.js" as YouzanFunction
 
 Window {

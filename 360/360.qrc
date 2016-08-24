@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>360mainview.qml</file>
+        <file>MainPage.qml</file>
+        <file>TopBar.qml</file>
+        <file>common/CustomButton.qml</file>
+        <file>common/DDImage.qml</file>
+        <file>common/DDText.qml</file>
+        <file>BottomBar.qml</file>
+        <file>common/SigleButton.qml</file>
+        <file>common/AnimationButton.qml</file>
+        <file>MidPage.qml</file>
+        <file>MidChangePart.qml</file>
+        <file>common/CustomProgressBar.qml</file>
+        <file>common/Win10Setting.qml</file>
+    </qresource>
+</RCC>

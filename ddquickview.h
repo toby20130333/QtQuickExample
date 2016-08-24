@@ -41,6 +41,9 @@ public:
     void setHasMouse(bool isHasMouse);
 
     void setSourceAndRegsiterObj(const QUrl& url,bool regsiter=true);
+
+    Q_INVOKABLE void setCanMoveRange(const QPoint& point);
+
     bool isHasMouseEvent;
     bool finishedhideAni;
     bool isHide;
@@ -64,7 +67,7 @@ protected:
     bool event(QEvent *);
 private:
     bool isLeftPressDown;
-    QPoint dragPosition;
+    QPoint dragPosition,moveRangePostion;
     Direction dir;
     bool canMove;
 

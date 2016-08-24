@@ -2,5 +2,46 @@
     <qresource prefix="/">
         <file>images/128.png</file>
         <file>images/qr.jpg</file>
+        <file>360logo.ico</file>
+        <file>images/360/btm/qinglilaji_yijianqingli_Anima_Hover.png</file>
+        <file>images/360/btm/qinglilaji_yijianqingli_Anima_Leave.png</file>
+        <file>images/360/btm/shamuma_new_Anima_Hover.png</file>
+        <file>images/360/btm/shamuma_new_Anima_Leave.png</file>
+        <file>images/360/btm/youhuajiasu_Anima_Hover.png</file>
+        <file>images/360/btm/youhuajiasu_Anima_Leave.png</file>
+        <file>images/360/main/360logo.ico</file>
+        <file>images/360/main/android_48.png</file>
+        <file>images/360/main/assistant_qt.png</file>
+        <file>images/360/main/background_mainwnd.jpg</file>
+        <file>images/360/main/btn_examine_now.png</file>
+        <file>images/360/main/btn_fix_all.png</file>
+        <file>images/360/main/btn_fix_background.png</file>
+        <file>images/360/main/btn_install_360sd.png</file>
+        <file>images/360/main/btn_reexamine.png</file>
+        <file>images/360/main/btn_run.png</file>
+        <file>images/360/main/btn_scan_background.png</file>
+        <file>images/360/main/btn_view_detail.png</file>
+        <file>images/360/main/chart_48.png</file>
+        <file>images/360/main/close.png</file>
+        <file>images/360/main/detail_button_onekey.png</file>
+        <file>images/360/main/dl_logo.png</file>
+        <file>images/360/main/feedback.png</file>
+        <file>images/360/main/jjx_winpe_normal.png</file>
+        <file>images/360/main/MedalUnLight2.png</file>
+        <file>images/360/main/menu.png</file>
+        <file>images/360/main/min.png</file>
+        <file>images/360/main/more.png</file>
+        <file>images/360/main/payinsure_icon_360cr_normal.png</file>
+        <file>images/360/main/payinsure_safe_hover.png</file>
+        <file>images/360/main/payinsure_safe_normal.png</file>
+        <file>images/360/main/payinsure_safe_press.png</file>
+        <file>images/360/main/security_safe_hover.png</file>
+        <file>images/360/main/security_safe_normal.png</file>
+        <file>images/360/main/security_safe_press.png</file>
+        <file>images/360/main/share_weibo_icon.png</file>
+        <file>images/360/main/Skin.png</file>
+        <file>images/360/main/update_btn.png</file>
+        <file>images/360/main/v_line.png</file>
+        <file>images/360/main/win10.png</file>
     </qresource>
 </RCC>

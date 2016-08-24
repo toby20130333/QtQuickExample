@@ -8,13 +8,14 @@ YbQuickView::YbQuickView(QQuickView *parent) :
     m_Obj(NULL)
 {
     isLeftPressDown = false;
+    moveRangePostion = QPoint(this->width(),50);
     this->dir = NONE;
     isZhiding = true;
     isHide = false;
     isHasMouseEvent = true;
     iHeight = 600;
 
-    setFlags(Qt::FramelessWindowHint|Qt::WindowStaysOnTopHint|Qt::SubWindow);
+    setFlags(Qt::FramelessWindowHint|Qt::WindowStaysOnTopHint);
     setColor(Qt::transparent);
     setResizeMode(QQuickView::SizeRootObjectToView);
     setMinimumWidth(816);
@@ -45,6 +46,11 @@ void YbQuickView::setSourceAndRegsiterObj(const QUrl &url, bool regsiter)
         connect(m_Obj,SIGNAL(signalQmlOptions(QVariant,QString)),this,SLOT(slotRecevQmlReq(QVariant,QString)));
     }
 }
+
+void YbQuickView::setCanMoveRange(const QPoint &point)
+{
+    moveRangePostion = point;
+}
 void YbQuickView::mouseReleaseEvent(QMouseEvent *event)
 {
     if(event->button() == Qt::LeftButton) {
@@ -63,7 +69,7 @@ void YbQuickView::mousePressEvent(QMouseEvent *event)
         isLeftPressDown = true;
         if(dir != NONE) {
         } else {
-            if(  (event->pos().y()<=100) && (event->pos().x() <150))
+            if(  (event->pos().y()<=moveRangePostion.y()) && (event->pos().x() <moveRangePostion.x()))
             {
                 dragPosition = event->globalPos() - this->frameGeometry().topLeft();
                 canMove = true;
@@ -370,8 +376,13 @@ void YbQuickView::slotShowMaxAndNormal(bool showMax)
 /// 接受来自QML的请求
 void YbQuickView::slotRecevQmlReq(QVariant var, QString cmd)
 {
-    if(cmd == "system"){
-        this->close();
-        qApp->quit();
+    if(var.toString()=="system"){
+        if(cmd == "close"){
+            this->close();
+            qApp->quit();
+        }else if(cmd == "min"){
+            this->showMinimized();
+        }
     }
+
 }
