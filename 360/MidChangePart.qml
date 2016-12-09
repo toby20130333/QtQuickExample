@@ -5,6 +5,8 @@ import "./common" as Common
 Item {
     property string mainTitle: "使用<font color='red'>QtQuick</font>开发,让您更酷炫"
     property string subTitle: "建议下载360杀毒，防护更全面，电脑更安全"
+    signal changePageTo(int cmd)
+
     ProgressBar {
         id:progressBar
         anchors.left: parent.left
@@ -53,6 +55,7 @@ Item {
         anchors.bottomMargin: 0
         clickType: 11
         onSignalClickedBtn: {
+            changePageTo(clickType);
             //signalQmlOptions("close app","system");
         }
     }

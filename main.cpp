@@ -1,4 +1,4 @@
-#include <QGuiApplication>
+﻿#include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include "ddview.h"
 #include "ddquickview.h"
@@ -37,8 +37,6 @@ int main(int argc, char *argv[])
 #else
     view.setSourceAndRegsiterObj(QUrl::fromLocalFile("XunLei/DDXunLei.qml"));
 #endif
-
-
     view.show();
     view.setCanMoveRange(QPoint(view.width(),50));
 #else

@@ -1,4 +1,4 @@
-import QtQuick 2.0
+﻿import QtQuick 2.0
 import QtQuick.Controls 1.2
 import QtQuick.Controls.Styles 1.2
 
@@ -49,7 +49,7 @@ Rectangle {
         anchors.top: parent.top
         anchors.right: parent.right
         onSignalCloseApp: {
-            signalQmlOptions("close app","system");
+            signalQmlOptions("system","close");
         }
     }
 }

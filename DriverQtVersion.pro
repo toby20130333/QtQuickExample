@@ -20,7 +20,7 @@ MOC_DIR =./tmp/moc
 UI_DIR = ./tmp/ui
 OBJECTS_DIR = ./tmp/obj
 
-DEFINES += USE_360UI
+DEFINES += USE_DRIVER
 win32:{
     RC_FILE += 360.rc
 }
