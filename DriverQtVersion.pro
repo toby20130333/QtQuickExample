@@ -4,14 +4,12 @@ QT += qml quick printsupport
 
 SOURCES += main.cpp \
 #    ddview.cpp \
-    ddquickview.cpp \
+    ddui/ddquickview.cpp \
     youzan/youzanapi.cpp \
-    youzan/youzanobject.cpp
+    youzan/youzanobject.cpp \
+    model/bdtablemodel.cpp
 
-RESOURCES += qml.qrc \
-                          youzan/qml.qrc \
-    imgqrc.qrc \
-    360/360.qrc
+RESOURCES += qml.qrc imgqrc.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -29,6 +27,7 @@ include(deployment.pri)
 
 HEADERS += \
 #    ddview.h \
-    ddquickview.h \
+    ddui/ddquickview.h \
     youzan/youzanapi.h \
-    youzan/youzanobject.h
+    youzan/youzanobject.h \
+    model/bdtablemodel.h

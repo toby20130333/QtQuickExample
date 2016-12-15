@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>360mainview.qml</file>
         <file>MainPage.qml</file>
         <file>TopBar.qml</file>
         <file>common/CustomButton.qml</file>
@@ -13,5 +12,6 @@
         <file>MidChangePart.qml</file>
         <file>common/CustomProgressBar.qml</file>
         <file>common/Win10Setting.qml</file>
+        <file>Mainview.qml</file>
     </qresource>
 </RCC>
