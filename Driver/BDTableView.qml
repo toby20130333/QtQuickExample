@@ -1,6 +1,5 @@
-﻿
-import QtQuick 2.0
-import QtQuick.Controls 1.4
+﻿import QtQuick 2.0
+import QtQuick.Controls 1.2
 import QtQuick.Controls.Styles 1.2
 
 TableView {
@@ -98,8 +97,7 @@ TableView {
         title: "文字苦"
         width: roowView.width/4
     }
-    model: myModel
-
+    model: mTableModel
     function createObj(col){
         var newObject = Qt.createQmlObject('import QtQuick 2.0; Rectangle {color: "red"; width: 20; height: 20}',
                                             parentItem,

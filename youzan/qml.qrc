@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
         <file>YouZanApi.qml</file>
         <file>YouzanItem.qml</file>
         <file>YouZanView.qml</file>
@@ -14,5 +13,6 @@
         <file>YouzanSlider.qml</file>
         <file>YouzanTextTime.qml</file>
         <file>YouzanBottomGroup.qml</file>
+        <file>YouZanMain.qml</file>
     </qresource>
 </RCC>

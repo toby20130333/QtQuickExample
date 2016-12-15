@@ -1,19 +1,52 @@
 <RCC>
     <qresource prefix="/">
-        <file>DDSplitView.qml</file>
-        <file>DDMidView.qml</file>
-        <file>DDTopBar.qml</file>
-        <file>DDHomeButton.qml</file>
-        <file>DDBottomBar.qml</file>
-        <file>DDuiShadowBg.qml</file>
         <file>QQ/DDQQPageView.qml</file>
         <file>XunLei/DDXunLei.qml</file>
         <file>XunLei/DDXunView.qml</file>
         <file>XunLei/DDXunGridView.qml</file>
         <file>XunLei/DDXunLocalView.qml</file>
         <file>QQ/DDQQMainView.qml</file>
-        <file>DDCloseButton.qml</file>
-        <file>DDAbstractView.qml</file>
         <file>Driver/DDDriverView.qml</file>
+        <file>Driver/BDTableView.qml</file>
+        <file>Driver/DDTabView.qml</file>
+        <file>youzan/youzan.js</file>
+        <file>youzan/youzhan.json</file>
+        <file>youzan/qml.qrc</file>
+        <file>youzan/YouzanApi.pro</file>
+        <file>youzan/deployment.pri</file>
+        <file>youzan/DDAbstractView.qml</file>
+        <file>youzan/DDCloseButton.qml</file>
+        <file>youzan/DDuiShadowBg.qml</file>
+        <file>youzan/YouZanAnimation.qml</file>
+        <file>youzan/YouZanApi.qml</file>
+        <file>youzan/YouzanBottomGroup.qml</file>
+        <file>youzan/YouzanItem.qml</file>
+        <file>youzan/YouZanMain.qml</file>
+        <file>youzan/YouzanSlider.qml</file>
+        <file>youzan/YouzanTextTime.qml</file>
+        <file>youzan/YouZanView.qml</file>
+        <file>youzan/YouZanWindow.qml</file>
+        <file>youzan/YZCalView.qml</file>
+        <file>360/BottomBar.qml</file>
+        <file>360/MainPage.qml</file>
+        <file>360/Mainview.qml</file>
+        <file>360/MidChangePart.qml</file>
+        <file>360/MidPage.qml</file>
+        <file>360/TopBar.qml</file>
+        <file>360/common/AnimationButton.qml</file>
+        <file>360/common/CustomButton.qml</file>
+        <file>360/common/CustomProgressBar.qml</file>
+        <file>360/common/DDImage.qml</file>
+        <file>360/common/DDText.qml</file>
+        <file>360/common/SigleButton.qml</file>
+        <file>360/common/Win10Setting.qml</file>
+        <file>ddui/DDAbstractView.qml</file>
+        <file>ddui/DDBottomBar.qml</file>
+        <file>ddui/DDCloseButton.qml</file>
+        <file>ddui/DDHomeButton.qml</file>
+        <file>ddui/DDMidView.qml</file>
+        <file>ddui/DDSplitView.qml</file>
+        <file>ddui/DDTopBar.qml</file>
+        <file>ddui/DDuiShadowBg.qml</file>
     </qresource>
 </RCC>

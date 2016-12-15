@@ -1,4 +1,4 @@
-import QtQuick 2.0
+﻿import QtQuick 2.0
 import QtQuick.XmlListModel 2.0
 
 Item {
@@ -74,7 +74,8 @@ Item {
     GridView {
         id: grid
         anchors.fill: parent
-        cellWidth: parent.width/4; cellHeight: 70
+        cellWidth: 130;//parent.width/4;
+        cellHeight: 70
         model: curModel
         delegate: contactDelegate
         focus: true

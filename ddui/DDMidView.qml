@@ -2,7 +2,7 @@
 import QtQuick.Controls 1.2
 import QtQuick.Controls.Styles 1.1
 import QtQuick.Layouts 1.1
-import "./Driver/" as DriverPage
+import "../Driver/" as DriverPage
 
 Item{
     SplitView {
@@ -26,7 +26,7 @@ Item{
             color: "#E3F7FF"
             Image {
                 id: name2
-                source: "images/right.jpg"
+                source: "qrc:/images/right.jpg"
                 anchors.fill: parent
             }
         }

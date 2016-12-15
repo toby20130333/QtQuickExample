@@ -43,5 +43,10 @@
         <file>images/360/main/update_btn.png</file>
         <file>images/360/main/v_line.png</file>
         <file>images/360/main/win10.png</file>
+        <file>images/close.png</file>
+        <file>images/close_hover.png</file>
+        <file>images/close_pressed.png</file>
+        <file>images/mid.jpg</file>
+        <file>images/right.jpg</file>
     </qresource>
 </RCC>

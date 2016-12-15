@@ -1,9 +1,10 @@
-import QtQuick 2.2
+﻿import QtQuick 2.2
 import QtQuick.Controls 1.2
 import QtQuick.Window 2.1
 import QtQuick.Dialogs 1.2
+import "../ddui" as DDui
 
-DDAbstractView  {
+DDui.DDAbstractView  {
     id:driverUi
     visible: true
     width: 500
@@ -12,13 +13,12 @@ DDAbstractView  {
     onUsePrinfImgChanged: {
         yzObj.slotSetUseImagePrinf(usePrinfImg)
     }
-
     //与C++进行通信的对象
     Connections {
         target: yzObj
         onSignalPrintFinished: console.log("The print page data finished!")
     }
-    DDuiShadowBg{
+    DDui.DDuiShadowBg{
         id:bg
         width: driverUi.width
         height: driverUi.height

@@ -1,4 +1,4 @@
-# (20160824持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
+﻿# (20161209持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
 
 ![驱动精灵主界面](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickdriver.png)
 ![迅雷在线皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickxl.png)
@@ -37,6 +37,7 @@
 
 
 ## 注意事项
+* 所有图片资源归360奇虎公司所有,请勿商用
 * 目前修改子项目加载方式：pro文件的DEFINES += USE_YOUZAN 你可以改成其他子项目的，具体参考main.cpp代码
 * 有任何QtQuick相关的问题可以到[QtQuick论坛](http://www.heilqt.com)进行提问或者加入网站底部的QQ群
 * 例子有多个demo，自行切换main.cpp的加载qml的路径

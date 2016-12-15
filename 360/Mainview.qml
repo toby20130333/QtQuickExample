@@ -1,10 +1,10 @@
-import QtQuick 2.2
+﻿import QtQuick 2.2
 import QtQuick.Controls 1.2
 import QtQuick.Window 2.1
 import QtQuick.Dialogs 1.2
-import "../"
+import "../ddui" as DDui
 
-DDAbstractView  {
+DDui.DDAbstractView  {
     id:ui360
     visible: true
     width: 900+bgMarign*2
@@ -14,7 +14,7 @@ DDAbstractView  {
         //target: yzObj
         //onSignalPrintFinished: console.log("The print page data finished!")
     }
-    DDuiShadowBg{
+    DDui.DDuiShadowBg{
         id:bg
         width: ui360.width
         height: ui360.height

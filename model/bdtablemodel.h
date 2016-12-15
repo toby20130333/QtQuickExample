@@ -1,5 +1,4 @@
-﻿
-#ifndef BDTABLEMODEL_H
+﻿#ifndef BDTABLEMODEL_H
 #define BDTABLEMODEL_H
 
 #include <QAbstractTableModel>

@@ -1,11 +1,12 @@
-import QtQuick 2.0
+﻿import QtQuick 2.0
 import QtQuick.Window 2.1
-import "../"
-DDAbstractView {
+import "../ddui" as DDui
+
+DDui.DDAbstractView {
     id:xunLei
     width: 462
     height: 350
-    DDuiShadowBg{
+   DDui. DDuiShadowBg{
         id:bg
         width: xunLei.width
         height: xunLei.height
@@ -19,7 +20,7 @@ DDAbstractView {
                 id:view
                 anchors.fill: parent
             }
-            DDCloseButton{
+            DDui.DDCloseButton{
                 id:close
                 width: 32
                 height: width

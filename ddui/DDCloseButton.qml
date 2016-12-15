@@ -6,7 +6,7 @@ Rectangle{
     height: 22
     property bool hasMouse: false
     property string statusN: ""
-    property string imgUrl: "images/close"+statusN+".png"
+    property string imgUrl: "qrc:/images/close"+statusN+".png"
     color:hasMouse?"#D44027": "transparent"
     signal signalCloseApp();
     MouseArea{
