@@ -75,6 +75,7 @@ private:
     QObject *m_Obj;
     YouZanObject yZObj;
     BDTableModel mTableModel;
+    BDTableModel mMyModel;
 public slots:
     void slotFinishedAnimation1();
     void slotFinishedAnimation2();
@@ -82,6 +83,7 @@ public slots:
     void slotShowMaxAndNormal(bool showMax);
 
     void slotRecevQmlReq(QVariant var,QString cmd);
+    void showTrayIcon();
 };
 
 #endif // YBQUICKVIEW_H

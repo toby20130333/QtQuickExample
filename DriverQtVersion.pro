@@ -24,6 +24,7 @@ win32:{
 }
 # Default rules for deployment.
 include(deployment.pri)
+#include(systemtrayicon/systemtrayicon.pri)
 
 HEADERS += \
 #    ddview.h \

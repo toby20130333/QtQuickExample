@@ -40,6 +40,12 @@ TabView {
                 anchors.fill: parent
             }
         }
+        Tab {
+            title: "Dynicdemo"
+            DDDynamicTable{
+                anchors.fill: parent
+            }
+        }
         style: TabViewStyle {
             property color frameColor: "#999"
             property color fillColor: "#eee"

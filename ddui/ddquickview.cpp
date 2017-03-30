@@ -1,4 +1,8 @@
 ﻿#include "ddquickview.h"
+#include <QQmlEngine>
+#include <QSystemTrayIcon>
+#include <QMenu>
+#include <QAction>
 
 YbQuickView::YbQuickView(QQuickView *parent) :
     QQuickView(parent),
@@ -24,7 +28,38 @@ YbQuickView::YbQuickView(QQuickView *parent) :
 YbQuickView::~YbQuickView()
 {
 }
+///
+/// \brief YbQuickView::showTrayIcon
+/// 显示系统托盘 可扩展
+///
+void YbQuickView::showTrayIcon(){
+    QObject *root = 0;
+    if (rootObject() != NULL)
+    {
+        root = rootObject();
+        QAction *minimizeAction = new QAction(QObject::tr("Mi&nimize"), this);
+        root->connect(minimizeAction, SIGNAL(triggered()), this, SLOT(hide()));
+        QAction *maximizeAction = new QAction(QObject::tr("Ma&ximize"), this);
+        root->connect(maximizeAction, SIGNAL(triggered()), this, SLOT(showMaximized()));
+        QAction *restoreAction = new QAction(QObject::tr("&Restore"), this);
+        root->connect(restoreAction, SIGNAL(triggered()), this, SLOT(showNormal()));
+        QAction *quitAction = new QAction(QObject::tr("&Quit"), this);
+        root->connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
 
+        QMenu *trayIconMenu = new QMenu();
+        trayIconMenu->addAction(minimizeAction);
+        trayIconMenu->addAction(maximizeAction);
+        trayIconMenu->addAction(restoreAction);
+        trayIconMenu->addSeparator();
+        trayIconMenu->addAction(quitAction);
+
+        QSystemTrayIcon *trayIcon = new QSystemTrayIcon(this);
+        trayIcon->setContextMenu(trayIconMenu);
+        trayIcon->setIcon(QIcon(":/360logo.ico"));
+        trayIcon->show();
+    }
+
+}
 void YbQuickView::setMaxYbView(QSize size)
 {
     this->setMaximumSize(size);
@@ -43,7 +78,9 @@ void YbQuickView::setSourceAndRegsiterObj(const QUrl &url, bool regsiter)
     if(regsiter){
         //model需要在setsource之前设置
         mTableModel.initData(14);
+        mMyModel.initData(5);
         this->rootContext()->setContextProperty("mTableModel", &mTableModel);
+        this->rootContext()->setContextProperty("mMyModel", &mMyModel);
         setSource(url);
         //setSource后才能得到obj对象
         m_Obj  = this->rootObject();

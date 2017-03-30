@@ -48,5 +48,6 @@
         <file>ddui/DDSplitView.qml</file>
         <file>ddui/DDTopBar.qml</file>
         <file>ddui/DDuiShadowBg.qml</file>
+        <file>Driver/DDDynamicTable.qml</file>
     </qresource>
 </RCC>

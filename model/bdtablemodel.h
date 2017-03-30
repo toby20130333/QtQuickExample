@@ -64,7 +64,6 @@ public:
     void setCarbs(const QString& carbs){m_carbs = carbs;}
     void setComboxLst(const QStringList& cmLst){m_comboxLst = cmLst;}
     void setChecked(const bool& checked){m_checked = checked;}
-
 private:
     QString m_dessert;
     QString m_type;
@@ -96,6 +95,8 @@ public:
     // Remove data:
     bool removeRows(int row, int count, const QModelIndex &parent = QModelIndex()) override;
     virtual QHash<int,QByteArray> roleNames() const;
+    Q_INVOKABLE QStringList userRoleNames();
+
 private:
     QList<BDTableObject> mObjDataList;
 };

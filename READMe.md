@@ -1,4 +1,4 @@
-﻿# (20161209持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
+﻿# (20170330持续更新)基于QtQuick2.0开发的诸多漂亮的界面例子(作为入门首选)
 
 ![驱动精灵主界面](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickdriver.png)
 ![迅雷在线皮肤设置](http://7qn7mv.com1.z0.glb.clouddn.com/qtquickxl.png)
@@ -8,6 +8,7 @@
 ## 客户端
 
 ### 使用QtQuick技术开发酷炫的客户端
+
 * 使用QML开发客户端界面
 * 模仿驱动精灵界面(待完善)
 * 模仿QQ界面(待开发)
@@ -20,6 +21,8 @@
 * 刷新订单功能
 * 新增二维码生成接口(可以参考我的另外的项目[二维码生成器](https://github.com/toby20130333/qtquickqrencode))
 * 新增360安全界面模仿
+* 集成各个页面
+* 加入系统托盘功能
 
 ## 憧憬
 
@@ -29,7 +32,6 @@
 * 为自身的App打下基石
 
 
-
 ## 贡献
 
 * [寒山-居士](https://github.com/toby20130333)
@@ -37,6 +39,7 @@
 
 
 ## 注意事项
+
 * 所有图片资源归360奇虎公司所有,请勿商用
 * 目前修改子项目加载方式：pro文件的DEFINES += USE_YOUZAN 你可以改成其他子项目的，具体参考main.cpp代码
 * 有任何QtQuick相关的问题可以到[QtQuick论坛](http://www.heilqt.com)进行提问或者加入网站底部的QQ群

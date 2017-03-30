@@ -5,7 +5,7 @@ BDTableModel::BDTableModel(QObject *parent)
     : QAbstractTableModel(parent)
 {
     mObjDataList.clear();
-//    initData();
+    //    initData();
 }
 
 void BDTableModel::initData(int count)
@@ -51,8 +51,8 @@ void BDTableModel::removeRowData(int row)
 
 int BDTableModel::rowCount(const QModelIndex &parent) const
 {
-//    if (!parent.isValid())
-//        return 0;
+    //    if (!parent.isValid())
+    //        return 0;
     return mObjDataList.size();
     // FIXME: Implement me!
 }
@@ -65,11 +65,11 @@ int BDTableModel::columnCount(const QModelIndex &parent) const
 
 QVariant BDTableModel::data(const QModelIndex &index, int role) const
 {
-//    qDebug()<<Q_FUNC_INFO<<role<<" index " <<index;
+    //    qDebug()<<Q_FUNC_INFO<<role<<" index " <<index;
     if (!index.isValid() || rowCount() < index.row() || index.row() < 0)
         return QVariant();
     BDTableObject obj = mObjDataList[index.row()];
-//    qDebug()<<Q_FUNC_INFO<<role<<" index " <<index;
+    //    qDebug()<<Q_FUNC_INFO<<role<<" index " <<index;
     switch (role) {
     case FIRST:
         return obj.dessert();
@@ -78,11 +78,11 @@ QVariant BDTableModel::data(const QModelIndex &index, int role) const
     case THREE:
         return obj.flat();
     case FOUR:
-       return obj.carbs();
+        return obj.carbs();
     case FIVE:
-       return obj.checked();
+        return obj.checked();
     case SIX:
-       return obj.comboxLst();
+        return obj.comboxLst();
     default:
         break;
     }
@@ -118,3 +118,15 @@ QHash<int, QByteArray> BDTableModel::roleNames() const
     return hashData;
 }
 
+
+QStringList BDTableModel::userRoleNames()
+{
+    QMap<int, QString> res;
+    QHashIterator<int, QByteArray> i(roleNames());
+    while (i.hasNext()) {
+        i.next();
+//        if(i.key() > Qt::UserRole)
+            res[i.key()] = i.value();
+    }
+    return res.values();
+}
