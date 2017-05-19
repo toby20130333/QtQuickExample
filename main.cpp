@@ -10,7 +10,11 @@ int main(int argc, char *argv[])
     YbQuickView view;
     view.setFlags(Qt::FramelessWindowHint|Qt::Window);
     view.setHasMouse(false);
+#ifndef QT_NO_DEBUG
     view.setSourceAndRegsiterObj(QUrl::fromLocalFile("Driver/DDDriverView.qml"));
+#else
+    view.setSourceAndRegsiterObj(QUrl("qrc:/Driver/DDDriverView.qml"));
+#endif
     view.showTrayIcon();
     view.show();
     view.setCanMoveRange(QPoint(view.width(),50));
