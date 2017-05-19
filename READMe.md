@@ -40,6 +40,7 @@
 
 ## 注意事项
 
+* 该项目Qt5.3-Qt5.7编译通过
 * 所有图片资源归360奇虎公司所有,请勿商用
 * 目前修改子项目加载方式：pro文件的DEFINES += USE_YOUZAN 你可以改成其他子项目的，具体参考main.cpp代码
 * 有任何QtQuick相关的问题可以到[QtQuick论坛](http://www.heilqt.com)进行提问或者加入网站底部的QQ群

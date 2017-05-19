@@ -80,7 +80,7 @@ public slots:
     void slotFinishedAnimation1();
     void slotFinishedAnimation2();
 
-    void slotShowMaxAndNormal(bool showMax);
+    void slotShowMaxAndNormal(bool showMax = true);
 
     void slotRecevQmlReq(QVariant var,QString cmd);
     void showTrayIcon();

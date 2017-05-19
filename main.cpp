@@ -2,7 +2,6 @@
 #include <QQmlApplicationEngine>
 #include "ddui/ddview.h"
 #include "ddui/ddquickview.h"
-#include <systemtrayicon/bdsystemtrayicon.h>
 
 int main(int argc, char *argv[])
 {
