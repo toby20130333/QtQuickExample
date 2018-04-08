@@ -5,6 +5,7 @@ import QtQuick.Controls.Styles 1.2
 TableView {
     id:roowView
     property var comList: [1,2,3,4,5,6,7]
+    property int scrollbarWidth : 10
     itemDelegate: Item {
         function isCheckColumn( columnIndex )
         {
@@ -23,6 +24,23 @@ TableView {
             anchors.centerIn: parent
             checked: styleData.value
             visible: isCheckColumn( styleData.column )
+            style: CheckBoxStyle {
+                indicator: Rectangle {
+                    implicitWidth: 14
+                    implicitHeight: 14
+                    radius: 2
+                    border.color: control.activeFocus ? "darkblue" : "gray"
+                    border.width: 1
+                    Rectangle {
+                        visible: control.checked
+                        color: "#555"
+                        border.color: "#333"
+                        radius: 1
+                        anchors.margins: 2
+                        anchors.fill: parent
+                    }
+                }
+            }
         }
         ComboBox
         {
@@ -63,6 +81,62 @@ TableView {
         height: 40
         border.width: 1
         border.color:"grey"
+    }
+    style : ScrollViewStyle{
+           scrollBarBackground : Item {
+               implicitWidth: roowView.scrollbarWidth
+               implicitHeight: roowView.scrollbarWidth
+               visible : true
+               Rectangle {
+                   anchors.fill: parent
+                   color: "transparent"
+                   border.color: "transparent"
+                   anchors.rightMargin: styleData.horizontal ? -2 : -1
+                   anchors.leftMargin: styleData.horizontal ? -2 : 0
+                   anchors.topMargin: styleData.horizontal ? 0 : -2
+                   anchors.bottomMargin: styleData.horizontal ? -1 : -2
+               }
+
+           }
+           handle: Rectangle{
+                   id : theRect
+                   opacity: 0.8
+                   implicitWidth: styleData.horizontal ? 66 : roowView.scrollbarWidth
+                   implicitHeight: styleData.horizontal ? roowView.scrollbarWidth : 66
+                   color : "#232323"
+                   radius : roowView.scrollbarWidth
+                   border.width: 1
+                   border.color: "#333333"
+                   states: [
+                       State {
+                           name: "clicked"
+                           when : styleData.pressed
+                           PropertyChanges {target: theRect; opacity : 1}
+                       },
+                       State{
+                         name: "hovered"
+                         when : styleData.hovered
+                         PropertyChanges {target: theRect; opacity : 0.6}
+                       }
+
+                   ]
+                   transitions: Transition {
+                           PropertyAnimation { properties: "opacity"; easing.type: Easing.InOutQuad; duration: 500 }
+                   }
+               }
+           incrementControl: Rectangle {
+                   visible : false
+                   implicitWidth: 0
+                   implicitHeight: 0
+                   color : "blue"
+               }
+           decrementControl: Rectangle {
+                   visible : false
+                   implicitWidth: 0
+                   implicitHeight: 40
+                   color : "blue"
+               }
+           corner: Rectangle { color: "transparent";visible : false }
     }
 
     TableViewColumn {

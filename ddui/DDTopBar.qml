@@ -60,6 +60,24 @@ Rectangle {
                 signalTopBtnClicked(5)
             }
         }
+        DDHomeButton{
+            id:homeBtn7
+            height: parent.height
+            btnUrl: "http://download.easyicon.net/png/42882/72/"
+            btnTxt: "数字雨"
+            onSignalBtnClicked: {
+                signalTopBtnClicked(6)
+            }
+        }
+        DDHomeButton{
+            id:homeBtn8
+            height: parent.height
+            btnUrl: "http://download.easyicon.net/png/1150085/72/"
+            btnTxt: "诗词歌赋"
+            onSignalBtnClicked: {
+                signalTopBtnClicked(7)
+            }
+        }
     }
     DDCloseButton{
         id:close

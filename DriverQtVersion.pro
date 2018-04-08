@@ -7,7 +7,9 @@ SOURCES += main.cpp \
     ddui/ddquickview.cpp \
     youzan/youzanapi.cpp \
     youzan/youzanobject.cpp \
-    model/bdtablemodel.cpp
+    model/bdtablemodel.cpp \
+    ddui/ddframeless_helper.cpp \
+    ddui/ddnewquickwindow.cpp
 
 RESOURCES += qml.qrc imgqrc.qrc
 
@@ -31,4 +33,6 @@ HEADERS += \
     ddui/ddquickview.h \
     youzan/youzanapi.h \
     youzan/youzanobject.h \
-    model/bdtablemodel.h
+    model/bdtablemodel.h \
+    ddui/ddframeless_helper.h \
+    ddui/ddnewquickwindow.h

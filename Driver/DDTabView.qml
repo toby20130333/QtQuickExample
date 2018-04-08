@@ -5,6 +5,8 @@ import "../XunLei/" as XunLei
 import "../youzan/" as YouZan
 import "../360/" as  View360
 import "../QQ/" as QQ
+import "../matrix" as Matrix
+import "../poetry" as Poetry
 
 TabView {
         id: tabView
@@ -43,6 +45,18 @@ TabView {
         Tab {
             title: "Dynicdemo"
             DDDynamicTable{
+                anchors.fill: parent
+            }
+        }
+        Tab {
+            title: "Matrix"
+            Matrix.MatrixItem{
+                anchors.fill: parent
+            }
+        }
+        Tab {
+            title: "Poetry"
+            Poetry.DDPoeComing{
                 anchors.fill: parent
             }
         }

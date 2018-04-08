@@ -49,5 +49,9 @@
         <file>ddui/DDTopBar.qml</file>
         <file>ddui/DDuiShadowBg.qml</file>
         <file>Driver/DDDynamicTable.qml</file>
+        <file>poetry/DDPoeTryPage.qml</file>
+        <file>poetry/DDPoeTryView.qml</file>
+        <file>matrix/MatrixItem.qml</file>
+        <file>poetry/DDPoeComing.qml</file>
     </qresource>
 </RCC>
