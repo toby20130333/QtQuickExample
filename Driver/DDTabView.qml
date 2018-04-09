@@ -52,6 +52,7 @@ TabView {
             title: "Matrix"
             Matrix.MatrixItem{
                 anchors.fill: parent
+                textColor:"#a10919"
             }
         }
         Tab {
