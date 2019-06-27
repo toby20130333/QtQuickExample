@@ -7,7 +7,7 @@ Rectangle {
     width: 100
     height: 100
     color: "transparent"
-    property url btnUrl: "http://download.easyicon.net/png/1194626/72/"
+    property url btnUrl: "http://www.easyicon.net/download/png/1194626/72/"
     property string btnTxt: "Home"
     property bool systemBtn: false
     signal signalBtnClicked(string btn);
